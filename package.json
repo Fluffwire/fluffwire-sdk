@@ -1,0 +1,44 @@
+{
+  "name": "@fluffwire/bot-sdk",
+  "version": "0.1.0",
+  "description": "Official Fluffwire bot SDK for Node.js",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fluffwire/fluffwire-sdk.git"
+  },
+  "keywords": ["fluffwire", "bot", "sdk", "chat"],
+  "author": "Fluffwire",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/Fluffwire/fluffwire-sdk/issues"
+  },
+  "homepage": "https://github.com/Fluffwire/fluffwire-sdk#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/ws": "^8.18.1",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.4"
+  },
+  "dependencies": {
+    "ws": "^8.20.0"
+  }
+}
